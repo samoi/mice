@@ -7,7 +7,7 @@ var sys = require('sys'),
     json = JSON.stringify,
     log = sys.puts;
 
-server.listen(8000);
+server.listen(8008);
 
 socket.on('connection', function(client){
   client.on('message', function(message){
