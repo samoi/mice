@@ -32,7 +32,7 @@ socket.on('connection', function(client){
     request.id = client.sessionId
     client.broadcast(json(request));
   });
-
+ // got ittttt
   client.on('disconnect', function(){
     client.broadcast(json({'id': client.sessionId, 'action': 'close'}));
   });
